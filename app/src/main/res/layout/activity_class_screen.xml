@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_black"
+    tools:context=".ClassScreen">
+
+    <TextView
+        android:id="@+id/selectClassTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/our_purple"
+        android:text="Choose Your Class"/>
+
+    <Button
+        android:layout_below="@+id/selectClassTV"
+        android:visibility="visible"
+        android:id="@+id/btnClass"
+        android:textSize="20sp"
+        android:text="Class Vl"
+
+        android:textAllCaps="false"
+        android:background="@drawable/class_button_background"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:elevation="6dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_black"
+    tools:context=".QuizFinish">
+
+    <RelativeLayout
+        android:id="@+id/relLay"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cpb_background_progressbar_color="@color/red"
+            app:cpb_background_progressbar_width="8dp"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progress_max="10"
+            app:cpb_progressbar_color="@color/green"
+            app:cpb_progressbar_width="12dp"
+            app:cpb_round_border="false" />
+
+        <TextView
+            android:textColor="@color/our_purple"
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="8/10"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/relLay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="share your score"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/retyrBtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/shareBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Retry"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
